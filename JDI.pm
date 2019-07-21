@@ -1,4 +1,3 @@
-
 package JDI;
 use base qw( CLI::Framework );
 
@@ -14,7 +13,7 @@ sub usage_text { q{
         help        - show application or command-specific help
         menu        - print command menu
         console     - start a command console for the application
-} }
+}}
 
 sub option_spec {
     [ 'help|h'      => 'show help' ],
@@ -39,4 +38,5 @@ sub init {
     my ($self, $opts) = @_;
     return 1;
 }
+
 1;
