@@ -1,0 +1,8 @@
+$VAR1 = bless( {
+                 'thing' => 1
+               }, 'Getopt::Long::Descriptive::Opts::__OPT__::2' );
+$VAR1 = [
+          'hooha',
+          '='
+        ];
+2

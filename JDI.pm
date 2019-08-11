@@ -1,11 +1,11 @@
 package JDI;
+
 use base qw( CLI::Framework );
 
 sub usage_text { q{
     $0 [--verbose|v]
 
     OPTIONS
-        --db [path]  : path to SQLite database file
         -v --verbose : be verbose
         -h --help    : show help
 
@@ -25,13 +25,13 @@ sub command_map {
     help    => 'CLI::Framework::Command::Help',
     menu    => 'My::Journal::Command::Menu',
     console => 'CLI::Framework::Command::Console',
+    alias   => 'JDI::Alias',
+    clean   => 'JDI::Cleaner',
 }
 
 sub command_alias {
     h   => 'help',
-    m   => 'menu',
-    sh  => 'console',
-    c   => 'console',
+    al  => 'alias',
 }
 
 sub init {
